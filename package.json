@@ -1,0 +1,16 @@
+{
+  "name": "train-checker",
+  "version": "1.0.0",
+  "author": "ru_shalm <ru_shalm@hazimu.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "run:prod": "serverless invoke -f main -l",
+    "run:local": "serverless invoke local -f main -l",
+    "deploy": "serverless deploy function -f main"
+  },
+  "dependencies": {
+    "chromeless": "^1.5.2",
+    "request": "^2.87.0"
+  }
+}
